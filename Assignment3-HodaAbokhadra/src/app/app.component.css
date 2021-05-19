@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+body{
+
+    padding: 50px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+
+#inputs{
+
+    font-size: xx-large;
+    color: blue;
+    border: 5px solid brown;
+    position: fixed;
+    padding:  25px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+#input{
+
+    font-size: xx-large;
+    color: blue;
+    position: relative;
+    padding:  50px;
+
+
+}
+
+h1{
+
+    color: crimson;
+}
