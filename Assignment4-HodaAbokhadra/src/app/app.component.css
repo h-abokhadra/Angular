@@ -1,0 +1,16 @@
+/* container for cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap:20px;
+   }
+   /* channel logo */
+   .channel-logo {
+    background-image: url("../assets/videos.json");
+    background-size: cover;
+   }
+ 
+   .content{
+    padding: 30px;
+    background-color: lightblue;
+   }

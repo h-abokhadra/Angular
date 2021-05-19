@@ -1,0 +1,23 @@
+<div class="content">
+<h1>Angular Tutorials</h1>
+
+<!-- material card -->
+<div class="container">
+<mat-card *ngFor = "let video of videos; let i = index">
+    <!-- 1. video thumbnail -->
+    <img mat-card-image [src]="video.thumbnail">
+    <mat-card-header>
+    <!-- 2. channel icon -- getAvatarUrl()--> 
+    <div mat-card-avatar class="channel-logo" [ngStyle] = "{'style' : video.channel-icon}"></div>
+    <!-- 3. video title -->
+    <mat-card-title>{{video.title}}</mat-card-title>
+    <!-- 4. channel name -->
+    <mat-card-subtitle>{{video.channel}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+    <!-- 5. button -- watchVideo()-->
+    <button (click) = "watchVideo(i)" mat-raised-button color="primary">WATCH</button>
+    </mat-card-actions>
+   </mat-card>
+</div>
+</div>
