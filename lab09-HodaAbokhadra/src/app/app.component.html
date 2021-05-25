@@ -1,0 +1,10 @@
+<h1>Shopping List</h1>
+<div>
+<input type="text" [(ngModel)]="item"> &nbsp;
+<input type="button" (click)="addItem()" value="Add Item">
+</div>
+
+<!-- placeholder for the child component/template -->
+<!-- list: the prop name of child component (target)-->
+<!-- items: the prop name of the parent component (source) -->
+<app-child [list]="items"></app-child>
