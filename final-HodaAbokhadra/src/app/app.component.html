@@ -1,0 +1,47 @@
+<!--Name: Hoda Abokhadra ---  ID: 991578255-->
+
+
+<h1>Employee List</h1>
+
+<div class="content">
+<div class = "dep">
+<label for="departments" >Choose Department</label>
+<!-- [(ngModel)]="..." (selectDepartment)="..."-->
+<select [(ngModel)]="selectedDepartment" (ngModelChange)="selectDepartment()">
+  <option value="Finance">Finance</option>
+  <option value="HR">HR</option>
+  <option value="IT">IT</option>
+  <option value="Marketing">Marketing</option>
+  <option value="Sales">Sales</option>
+  <option value="Support">Support</option>
+</select>
+</div>
+<!-- define table with dataSource -->
+<table mat-table [dataSource]="selectedEmployees" class="table">
+ <!-- define column(cell) templates -->
+ <ng-container matColumnDef="id" class="id">
+  <th mat-header-cell *matHeaderCellDef>ID</th>
+  <td mat-cell *matCellDef="let e">{{e.id}}</td>
+  </ng-container>
+ <ng-container matColumnDef="firstName" class="firstName">
+ <th mat-header-cell *matHeaderCellDef>First Name</th>
+ <td mat-cell *matCellDef="let e">{{e.firstName}}</td>
+ </ng-container>
+ <ng-container matColumnDef="lastName" class="lastName">
+ <th mat-header-cell *matHeaderCellDef>Last Name</th>
+ <td mat-cell *matCellDef="let e">{{e.lastName}}</td>
+ </ng-container>
+ <ng-container matColumnDef="department" class="department">
+ <th mat-header-cell *matHeaderCellDef>Department</th>
+ <td mat-cell *matCellDef="let e">{{e.department}}</td>
+ </ng-container>
+ <ng-container matColumnDef="salary" class="salary">
+ <th mat-header-cell *matHeaderCellDef>Salary</th>
+ <td mat-cell *matCellDef="let e">{{e.salary}}</td>
+ </ng-container>
+ <!-- define row templates -->
+ <tr mat-header-row *matHeaderRowDef="headers"></tr>
+ <tr mat-row *matRowDef="let row; columns: headers"></tr>
+</table>
+</div>
+

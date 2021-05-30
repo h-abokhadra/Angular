@@ -1,0 +1,74 @@
+/*Name: Hoda Abokhadra*/
+/*ID: 991578255*/
+
+
+.content{
+    padding: 30px;
+    background-color: lightblue;
+    font-family: cursive;
+
+   }
+   h1{
+    padding: 30px;
+    background-color: lightpink;
+    font-size: xx-large ;
+    font-family: cursive;
+    border: 5px solid yellowgreen ;
+    border-radius: 15px;;
+    margin: 20px;
+
+   }
+
+   select{
+    padding: 30px;
+    background-color: lightgray;
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 20px;
+
+   }
+
+   .table{
+    padding: 30px;
+    background-color: lightgoldenrodyellow;
+    font-family: cursive;
+    border: 5px solid navy ;
+    border-radius: 15px;;
+   }
+
+   .dep{
+
+    padding: 30px;
+    background-color: lightgreen;
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: bolder;
+    border: 5px solid brown ;
+    border-radius: 15px;
+    margin-bottom: 10px;
+   }
+
+    tr, td, table{
+   
+    padding: 25px;
+    background-color: lightgreen;
+    font-family: cursive;
+    font-size: large;
+    margin: 10px;
+    border: 2px solid navy ;
+    text-align: center;
+   }
+
+   th{
+    padding: 25px;
+    background-color: lightgreen;
+    font-family: cursive;
+    color: teal;
+    font-size: x-large;
+    margin: 10px;
+    border: 2px solid navy ;
+
+   }
+
+   
